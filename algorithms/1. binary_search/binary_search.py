@@ -6,8 +6,9 @@ logger = Logger()
 
 # input parameters
 
-array = range(200000)
+array = range(10 ** 10)
 target = 96
+
 
 # main code
 def binary_search(array, target):

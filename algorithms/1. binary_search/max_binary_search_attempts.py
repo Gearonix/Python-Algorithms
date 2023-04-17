@@ -8,6 +8,7 @@ logger = Logger()
 
 target = logger.input()
 
+
 # main code
 
 def max_binary_search_attempts(target):
