@@ -96,6 +96,13 @@ def recursive_section_sort(array, sorted=[]):
     return recursive_section_sort(array, sorted)
 
 
+def fib(n, prev2 = 0, prev1 = 1):
+    logger.start()
+    if n == 0:
+        return logger.end(prev2)
+    return fib(n - 1, prev1, prev2 + prev1)
+
+
 # function call
 
 # recursiveMax = RecursiveMax(array)
@@ -108,4 +115,6 @@ def recursive_section_sort(array, sorted=[]):
 # factorial(x)
 # sum(x)
 
-recursive_section_sort(array)
+# recursive_section_sort(array)
+
+fib(22)
