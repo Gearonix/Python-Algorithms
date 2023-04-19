@@ -93,7 +93,6 @@ def tourist_route_optimization(attractions):
     result = list(table[-1].values())[-1]
     return logger.end(result)
 
-
 # function call
 
 tourist_route_optimization(attractions)
