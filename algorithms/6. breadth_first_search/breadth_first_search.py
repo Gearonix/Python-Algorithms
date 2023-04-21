@@ -11,13 +11,11 @@ graph = {}
 graph["you"] = ["alice", "bob", "claire"]
 graph["bob"] = ["anuj", "peggy"]
 graph["alice"] = ["peggy"]
-graph["claire"] = ["thoms", "jonny"]
+graph["claire"] = ["thom", "jonny"]
 graph["anuj"] = []
 graph["peggy"] = ["alice"]
-graph["thoms"] = []
+graph["thom"] = []
 graph["jonny"] = []
-
-
 
 
 # main code
