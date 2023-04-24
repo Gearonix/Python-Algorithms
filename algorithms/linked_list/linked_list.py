@@ -1,42 +1,46 @@
-from logger import Logger
-
-# initialization
-
-logger = Logger()
-
 class LinkedList:
     def __init__(self):
         self.root = None
         self.size = 0
-    def add(self, value):
 
+    def add(self, value):
+        new_node = Node(value)
         current = self.root
 
         if not current:
-            self.root = Node(value)
+            self.root = new_node
             self.size += 1
             return
 
         while current.next:
             current = current.next
 
-        current.next = Node(value)
+        current.next = new_node
         self.size += 1
-    def get(self):
+
+    def list(self):
         list = []
 
         current = self.root
-
-        if not current:
-            return print(list)
 
         while current:
             list.append(current.value)
             current = current.next
 
-        return print(list)
+        return list
+
+    def includes(self, target):
+        current = self.root
+
+        while current:
+            if current.value == target:
+                return True
+            current = current.next
+
+        return False
+
     def get_size(self):
-        return print(self.size)
+        return self.size
 
 class Node:
     def __init__(self, value):
@@ -49,6 +53,9 @@ list = LinkedList()
 list.add(2)
 list.add(23)
 
-list.get()
+list.list()
 
 list.get_size()
+
+print(list.includes(2))
+print(list.includes(22))

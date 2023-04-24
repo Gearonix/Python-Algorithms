@@ -15,7 +15,7 @@ def around_binary_tree(tree):
 
     sum += tree['v']
 
-    if not tree.get('c'):
+    if not tree.list('c'):
         return
 
     for child in tree['c']:

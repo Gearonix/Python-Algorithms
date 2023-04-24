@@ -7,14 +7,14 @@ logger = Logger()
 
 # input parameters
 
-states_needed = set(string.ascii_lowercase)
+states_needed = set(["mt", "wa", "or", "id", "nv", "ut", "ca", "az"])
 
 stations = {}
-stations["kone"] = set(["a", "b", "c", 'p','k', 'g', 'z', 'w', 'f', 'i'])
-stations["ktwo"] = set(["d", "b", "q", 't'])
-stations["kthree"] = set(["v", "s", "a", "c",' j', 'h', 'y','w','f','u','z'])
-stations["kfour"] = set(["u", "r", 'o', 'j', 'n', 'x','e'])
-stations["kfive"] = set(["r", "m",' l', 'x', 'n','l', 'd', 'q'])
+stations["kone"] = set(["id", "nv", "ut"])
+stations["ktwo"] = set(["wa", "id", "mt"])
+stations["kthree"] = set(["or", "nv", "ca"])
+stations["kfour"] = set(["nv", "ut"])
+stations["kfive"] = set(["ca", "az"])
 
 final_stations = set()
 
@@ -41,7 +41,7 @@ def greedy_algorithm():
 
         final_stations.add(best_station)
         states_needed -= states_covered
-        stations.pop(best_station)
+        # stations.pop(best_station)
 
     return logger.end(final_stations)
 
