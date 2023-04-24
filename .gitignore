@@ -1,3 +1,5 @@
 docs
 venv
 .idea
+pnpm-lock.yaml
+node_modules
