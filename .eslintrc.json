@@ -16,6 +16,7 @@
     "new-cap": "off",
     "no-empty-function": "off",
     "no-empty": "off",
+    "prefer-const": "off",
     "semi": [
       "error",
       "never"
