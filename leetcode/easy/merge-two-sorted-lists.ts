@@ -71,4 +71,3 @@ const mergeTwoLists = (listNode1: any, listNode2: any): N<ListNode> => {
   }
   return toLinkedList(result)
 }
-
