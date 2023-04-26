@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esNext",
+    "module": "commonjs",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "baseUrl": "leetcode",
+    "paths": {
+      "data-structures": [
+        "data-structures/index.ts"
+      ]
+    }
+  },
+  "include": ["leetcode"]
+}

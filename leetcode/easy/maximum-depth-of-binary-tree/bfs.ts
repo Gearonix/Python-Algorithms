@@ -1,3 +1,5 @@
+import { TreeNode } from 'data-structures'
+
 function maxDepth(root: TreeNode | null): number {
   if (!root) {
     return 0

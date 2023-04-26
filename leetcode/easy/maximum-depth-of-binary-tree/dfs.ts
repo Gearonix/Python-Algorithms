@@ -1,3 +1,5 @@
+import { TreeNode } from 'data-structures'
+
 function dfsMaxDepth(tmp: TreeNode | null | undefined): number {
   if (!tmp) {
     return 0

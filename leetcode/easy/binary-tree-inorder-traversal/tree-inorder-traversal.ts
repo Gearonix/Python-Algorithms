@@ -1,4 +1,4 @@
-import TreeNode from './initialization'
+import { TreeNode } from 'data-structures'
 
 function inorderTraversal(tmp: TreeNode | null): number[] {
   if (!tmp) {

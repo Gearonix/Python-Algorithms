@@ -1,6 +1,6 @@
-import TreeNode from './initialization'
+import { TreeNode } from 'data-structures'
 
-function inorderTraversal(root: TreeNode | null): number[] {
+function inorderTraversal(root: TreeNode): number[] {
   let stack: TreeNode[] = [root]
   const result: number[] = []
 
