@@ -31,3 +31,5 @@ const quickSort = (tmp: string): string => { // example: tan
 
   return quickSort(less) + String.fromCharCode(divider) + quickSort(greater)
 }
+
+export {}

@@ -1,4 +1,4 @@
-function groupAnagrams(strs: string[]): string[][] {
+const groupAnagrams = (strs: string[]): string[][] => {
   const sorted = []
   for (let str of strs) {
     sorted.push(quickSort(str.split('')).join(''))
@@ -72,3 +72,5 @@ const quickSort = (tmp: string[]): string[] => { // example: tan
 //     return logger.end([*quick_sort(less), divider, *quick_sort(greater)])
 
 // groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat'])
+
+export {}
