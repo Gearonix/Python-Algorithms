@@ -1,6 +1,7 @@
 // runtime Beats 95.76%
 
 function productExceptSelf(nums: number[]): number[] {
+  console.log(nums)
   const firstSuitable = [1]
   for (let i = 0; i < nums.length - 1; i++) {
     const prev = firstSuitable[i]
@@ -18,5 +19,7 @@ function productExceptSelf(nums: number[]): number[] {
 
   return firstSuitable.map((num, i) => num * lastSuitable[i])
 }
+// console.log(productExceptSelf([2, 3, 4, 5]))
+console.log(productExceptSelf([1, 2, 3, 4]))
 
-// productExceptSelf([2, 3, 4, 5])
+export {}

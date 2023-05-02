@@ -10,6 +10,7 @@
   "parser": "@typescript-eslint/parser",
   "rules": {
     "max-len": "off",
+    "eol-last": "off",
     "@typescript-eslint/no-var-requires": "off",
     "no-tabs": "off",
     "require-jsdoc": "off",
