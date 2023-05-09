@@ -20,6 +20,8 @@
     "no-empty": "off",
     "prefer-const": "off",
     "no-constant-condition": "off",
+    "padded-blocks": "off",
+    "brace-style": "off",
     "semi": [
       "error",
       "never"
