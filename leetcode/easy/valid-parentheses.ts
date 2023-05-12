@@ -1,22 +1,27 @@
 function isValid(str: string): boolean {
-  const bracketsMap = {
+  const bracketsMap: Record<string, string> = {
     ')': '(',
     ']': '[',
     '}': '{'
   }
 
-  const openBrackets: any[] = []
-  let finalCondition = false
+  const openBrackets: string[] = []
 
-
-  str.split('').forEach((bracket, idx, array) => {
-    if (['(', '[', '{'].includes(bracket as any)) {
-      openBrackets.push(bracket)
-      // @ts-ignore
-    } else if (openBrackets.pop() !== bracketsMap[bracket]) {
-      finalCondition = true
+  for (let bracket of str) {
+    if (['(', '[', '{'].includes(bracket)) {
+      // add to start
+      openBrackets.unshift(bracket)
     }
-  })
-  console.log(openBrackets)
-  return !openBrackets.length && !finalCondition
+    else {
+      // remove from start
+      const first = openBrackets.shift()
+
+      if (first !== bracketsMap[bracket]) {
+        // invalid
+        return false
+      }
+    }
+  }
+
+  return openBrackets.length === 0
 }
