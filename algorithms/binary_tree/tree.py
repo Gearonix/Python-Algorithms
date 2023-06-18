@@ -43,12 +43,6 @@ class Node:
         self.value = value
         self.left = None
         self.right = None
-    def print_tree(self):
-        if self.left:
-            self.left.print_tree()
-        if self.right:
-            self.right.print_tree()
-        print(self.value)
 
 tree = BinaryTree('a')
 tree.add('a','b','left')
