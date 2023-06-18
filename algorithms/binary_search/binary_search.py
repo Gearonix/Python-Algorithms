@@ -23,9 +23,9 @@ def binary_search(array, target):
         if guess == target:
             return logger.end(guess)
         if guess < target:
-            low = mid
+            low = mid + 1
         if guess > target:
-            high = mid
+            high = mid - 1
 
 
 # function call
