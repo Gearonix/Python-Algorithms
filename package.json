@@ -1,24 +1,20 @@
 {
-  "name": "algorithms",
-  "version": "1.0.0",
-  "description": "",
+  "name": "leetcode",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gearonix/Python-Algorithms.git"
+    "url": "git+https://github.com/gearonix/leetcode.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Gearonix/Python-Algorithms/issues"
+  "scripts": {
+    "lint": "eslint . --fix"
   },
-  "homepage": "https://github.com/Gearonix/Python-Algorithms#readme",
+  "author": "grnx <egor.uzhanin@gmail.com>",
   "devDependencies": {
-    "@types/node": "^18.16.0",
-    "@typescript-eslint/eslint-plugin": "^5.59.1",
-    "@typescript-eslint/parser": "^5.59.1",
-    "eslint": "^8.39.0",
-    "eslint-config-google": "^0.14.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "@antfu/utils": "^0.7.7",
+    "@neodx/std": "^0.2.0",
+    "eslint": "^8.56.0",
+    "eslint-kit": "^10.15.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
   }
 }
