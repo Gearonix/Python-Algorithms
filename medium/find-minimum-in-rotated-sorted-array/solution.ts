@@ -17,4 +17,3 @@ function findMin(nums: number[]): number {
 
   return result
 }
-

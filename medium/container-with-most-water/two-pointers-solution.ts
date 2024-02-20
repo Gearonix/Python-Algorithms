@@ -26,4 +26,3 @@ function maxArea(heights: number[]): number {
 
   return maxSquare
 }
-

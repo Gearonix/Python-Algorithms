@@ -32,4 +32,3 @@ const quickSort = (tmp: string): string => {
 
   return quickSort(less) + String.fromCharCode(divider) + quickSort(greater)
 }
-

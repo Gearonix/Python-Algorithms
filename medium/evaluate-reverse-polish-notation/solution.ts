@@ -26,4 +26,3 @@ function evalRPN(tokens: string[]): number {
 const floorNum = (num: number): number => {
   return num < 0 ? Math.ceil(num) : Math.floor(num)
 }
-

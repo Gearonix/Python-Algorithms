@@ -13,8 +13,8 @@
     "exactOptionalPropertyTypes": true,
     "noImplicitAny": true,
     "noEmit": true,
-    "baseUrl": "./problems"
+    "baseUrl": "."
   },
-  "include": ["problems/**/*"],
+  "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
